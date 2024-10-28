@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct RowView: View {
+
+    @StateObject var viewModel: NewsDetailsViewModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(spacing: 10) {
+            NewsImageView(
+                imageData: viewModel.newsImageData,
+                size: CGSize(width: 120, height: 120),
+                cornerRadius: 10
+            )
+            
+            VStack {
+                Text(viewModel.newsTitle)
+                HStack {
+                    Spacer()
+                    Label(viewModel.counter.formatted(), systemImage: "eye")
+                        .font(.footnote)
+                    .foregroundStyle(.black)
+                }
+            }
+            
+        }
     }
 }
 
 #Preview {
-    RowView()
+    RowView(viewModel: NewsDetailsViewModel(news: Article.getArticle()))
 }
