@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct NewsImageView: View {
+    
+    var imageData: Data
+    
+    var size: CGSize
+    var cornerRadius: CGFloat
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        getImage()
+            .resizable()
+            .frame(width: size.width, height: size.height)
+            .cornerRadius(cornerRadius)
+    }
+    
+    private func getImage() -> Image {
+        guard let uiImage = UIImage(data: imageData) else { return Image(systemName: "photo")}
+        return Image(uiImage: uiImage)
     }
 }
 
 #Preview {
-    NewsImageView()
+    NewsImageView(
+        imageData: Data() ,
+        size: CGSize(width: 230, height: 150),
+        cornerRadius: 30
+    )
 }
