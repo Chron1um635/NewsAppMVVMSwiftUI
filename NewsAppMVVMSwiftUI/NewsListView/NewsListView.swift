@@ -8,14 +8,29 @@
 import SwiftUI
 
 struct NewsListView: View {
+    
+    @StateObject private var viewModel = NewsListViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List(viewModel.news, id: \.newsTitle) { newsListDetailViewModel in
+                NavigationLink(destination: NewsDetailsView(viewModel: newsListDetailViewModel)) {
+                    RowView(viewModel: newsListDetailViewModel)
+                }
+                .task {
+                    newsListDetailViewModel.fetchImageData()
+                }
+            }
+            .navigationTitle("News")
         }
-        .padding()
+        .task {
+            viewModel.fetchData()
+        }
+        .refreshable {
+            Task {
+                viewModel.fetchData()
+            }
+        }
     }
 }
 
