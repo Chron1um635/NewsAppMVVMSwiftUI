@@ -8,17 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		22FA7ED72CCBBFAC004B1690 /* NewsAppMVVMSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7ED62CCBBFAC004B1690 /* NewsAppMVVMSwiftUIApp.swift */; };
-		22FA7ED92CCBBFAC004B1690 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7ED82CCBBFAC004B1690 /* ContentView.swift */; };
+		22FA7ED92CCBBFAC004B1690 /* NewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7ED82CCBBFAC004B1690 /* NewsListView.swift */; };
 		22FA7EDB2CCBBFAD004B1690 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22FA7EDA2CCBBFAD004B1690 /* Assets.xcassets */; };
 		22FA7EDE2CCBBFAD004B1690 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22FA7EDD2CCBBFAD004B1690 /* Preview Assets.xcassets */; };
+		22FA7EE82CCBBFFC004B1690 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7EE72CCBBFFC004B1690 /* News.swift */; };
+		22FA7EEA2CCBC00E004B1690 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7EE92CCBC00E004B1690 /* NetworkManager.swift */; };
+		22FA7EED2CCBC027004B1690 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 22FA7EEC2CCBC027004B1690 /* Alamofire */; };
+		22FA7EF22CCBC0C6004B1690 /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7EF12CCBC0C6004B1690 /* NewsListViewModel.swift */; };
+		22FA7EF42CCBC229004B1690 /* NewsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7EF32CCBC229004B1690 /* NewsDetailsViewModel.swift */; };
+		22FA7EF62CCBC332004B1690 /* NewsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7EF52CCBC332004B1690 /* NewsDetailsView.swift */; };
+		22FA7EF92CCBC453004B1690 /* NewsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7EF82CCBC453004B1690 /* NewsImageView.swift */; };
+		22FA7EFB2CCBC8B4004B1690 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7EFA2CCBC8B4004B1690 /* RowView.swift */; };
+		22FA7EFF2CCD2A3E004B1690 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FA7EFE2CCD2A3E004B1690 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22FA7ED32CCBBFAC004B1690 /* NewsAppMVVMSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsAppMVVMSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FA7ED62CCBBFAC004B1690 /* NewsAppMVVMSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAppMVVMSwiftUIApp.swift; sourceTree = "<group>"; };
-		22FA7ED82CCBBFAC004B1690 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		22FA7ED82CCBBFAC004B1690 /* NewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListView.swift; sourceTree = "<group>"; };
 		22FA7EDA2CCBBFAD004B1690 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22FA7EDD2CCBBFAD004B1690 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		22FA7EE72CCBBFFC004B1690 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		22FA7EE92CCBC00E004B1690 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		22FA7EF12CCBC0C6004B1690 /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
+		22FA7EF32CCBC229004B1690 /* NewsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewModel.swift; sourceTree = "<group>"; };
+		22FA7EF52CCBC332004B1690 /* NewsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsView.swift; sourceTree = "<group>"; };
+		22FA7EF82CCBC453004B1690 /* NewsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsImageView.swift; sourceTree = "<group>"; };
+		22FA7EFA2CCBC8B4004B1690 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		22FA7EFE2CCD2A3E004B1690 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FA7EED2CCBC027004B1690 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +69,12 @@
 		22FA7ED52CCBBFAC004B1690 /* NewsAppMVVMSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				22FA7EF72CCBC435004B1690 /* Views */,
+				22FA7EE62CCBBFD5004B1690 /* NewsDetailsView */,
+				22FA7EE52CCBBFCA004B1690 /* Services */,
+				22FA7EE42CCBBFC4004B1690 /* Models */,
+				22FA7EF02CCBC04B004B1690 /* NewsListView */,
 				22FA7ED62CCBBFAC004B1690 /* NewsAppMVVMSwiftUIApp.swift */,
-				22FA7ED82CCBBFAC004B1690 /* ContentView.swift */,
 				22FA7EDA2CCBBFAD004B1690 /* Assets.xcassets */,
 				22FA7EDC2CCBBFAD004B1690 /* Preview Content */,
 			);
@@ -65,6 +87,50 @@
 				22FA7EDD2CCBBFAD004B1690 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		22FA7EE42CCBBFC4004B1690 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22FA7EE72CCBBFFC004B1690 /* News.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		22FA7EE52CCBBFCA004B1690 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				22FA7EE92CCBC00E004B1690 /* NetworkManager.swift */,
+				22FA7EFE2CCD2A3E004B1690 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		22FA7EE62CCBBFD5004B1690 /* NewsDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				22FA7EF32CCBC229004B1690 /* NewsDetailsViewModel.swift */,
+				22FA7EF52CCBC332004B1690 /* NewsDetailsView.swift */,
+			);
+			path = NewsDetailsView;
+			sourceTree = "<group>";
+		};
+		22FA7EF02CCBC04B004B1690 /* NewsListView */ = {
+			isa = PBXGroup;
+			children = (
+				22FA7ED82CCBBFAC004B1690 /* NewsListView.swift */,
+				22FA7EFA2CCBC8B4004B1690 /* RowView.swift */,
+				22FA7EF12CCBC0C6004B1690 /* NewsListViewModel.swift */,
+			);
+			path = NewsListView;
+			sourceTree = "<group>";
+		};
+		22FA7EF72CCBC435004B1690 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22FA7EF82CCBC453004B1690 /* NewsImageView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +149,9 @@
 			dependencies = (
 			);
 			name = NewsAppMVVMSwiftUI;
+			packageProductDependencies = (
+				22FA7EEC2CCBC027004B1690 /* Alamofire */,
+			);
 			productName = NewsAppMVVMSwiftUI;
 			productReference = 22FA7ED32CCBBFAC004B1690 /* NewsAppMVVMSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +180,9 @@
 				Base,
 			);
 			mainGroup = 22FA7ECA2CCBBFAB004B1690;
+			packageReferences = (
+				22FA7EEB2CCBC027004B1690 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 22FA7ED42CCBBFAC004B1690 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +209,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22FA7ED92CCBBFAC004B1690 /* ContentView.swift in Sources */,
+				22FA7EEA2CCBC00E004B1690 /* NetworkManager.swift in Sources */,
+				22FA7EFF2CCD2A3E004B1690 /* DataManager.swift in Sources */,
+				22FA7EF92CCBC453004B1690 /* NewsImageView.swift in Sources */,
+				22FA7EE82CCBBFFC004B1690 /* News.swift in Sources */,
+				22FA7EF42CCBC229004B1690 /* NewsDetailsViewModel.swift in Sources */,
+				22FA7EFB2CCBC8B4004B1690 /* RowView.swift in Sources */,
+				22FA7EF22CCBC0C6004B1690 /* NewsListViewModel.swift in Sources */,
+				22FA7ED92CCBBFAC004B1690 /* NewsListView.swift in Sources */,
+				22FA7EF62CCBC332004B1690 /* NewsDetailsView.swift in Sources */,
 				22FA7ED72CCBBFAC004B1690 /* NewsAppMVVMSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +424,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		22FA7EEB2CCBC027004B1690 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22FA7EEC2CCBC027004B1690 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 22FA7EEB2CCBC027004B1690 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 22FA7ECB2CCBBFAB004B1690 /* Project object */;
 }
